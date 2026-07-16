@@ -14,7 +14,7 @@
         </div>
         <ol>
             <li><a href="#home">Home</a></li>
-            <li><a href="documentation.html">Documentation</a></li>
+            <li><a href="documentation.html">How to use?</a></li>
             <li><a href="#about">Contact us</a></li>
         </ol>
     </nav>
@@ -30,7 +30,7 @@
                         <p>Amount</p>
                         <div class="sector">
 
-                            <select id="from"class="country">
+                            <select id="from"class="country"onchange="convertCurrency()">
                                 <option value="USD">USD - US Dollar</option>
                     <option value="INR" selected>INR - Indian Rupee</option>
                     <option value="EUR">EUR - Euro</option>
@@ -57,15 +57,15 @@
                     <option value="MYR">MYR - Malaysian Ringgit</option>
                     <option value="PKR">PKR - Pakistani Rupee</option>
                 </select>
-                <input type="number" id="amount" value="1000.00">
+                <input type="number" id="amount"class="amount" placeholder="Enter amount" value="1" onchange="convertCurrency()">
             </div>
                     </div>
-                    <img src="const.jfif" alt="Currency Conversion"width="40" height="40">
+                    <img src="const.jfif" class="swap"alt="Currency Conversion"width="40" height="40">
                     <div class="down sec">
                         <p>Converted Amount</p>
                          <div class="sector">
 
-                             <select id="to"class="country">
+                             <select id="to"class="country"onchange="convertCurrency()">
                                  <option value="USD" selected>USD - US Dollar</option>
                                  <option value="INR" >INR - Indian Rupee</option>
                     <option value="EUR">EUR - Euro</option>
@@ -92,7 +92,7 @@
                     <option value="MYR">MYR - Malaysian Ringgit</option>
                     <option value="PKR">PKR - Pakistani Rupee</option>
                 </select>
-                <input type="number" id="converted-amount" value="0.00" readonly>
+                <input type="number" id="converted-amount"class="amount" value="0.01" readonly>
             </div>
 
                     </div>
