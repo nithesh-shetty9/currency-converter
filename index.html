@@ -7,7 +7,103 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <nav>
+        <div class="logo">
+            <img src="images.png">
+            <h1>CurrencyMate</h1>
+        </div>
+        <ol>
+            <li><a href="#home">Home</a></li>
+            <li><a href="documentation.html">Documentation</a></li>
+            <li><a href="#about">Contact us</a></li>
+        </ol>
+    </nav>
+    <section>
+        <div class="container">
+            <main>
+                <header>
+                    <h1>Currency Converter</h1>
+                     <p>Convert currencies instantly with live exchange rates using our fast, accurate, and easy-to-use currency converter.</p>
+                </header>
+                <div class="converter">
+                    <div class="up sec">
+                        <p>Amount</p>
+                        <div class="sector">
+
+                            <select id="from"class="country">
+                                <option value="USD">USD - US Dollar</option>
+                    <option value="INR" selected>INR - Indian Rupee</option>
+                    <option value="EUR">EUR - Euro</option>
+                    <option value="GBP">GBP - British Pound</option>
+                    <option value="JPY">JPY - Japanese Yen</option>
+                    <option value="AUD">AUD - Australian Dollar</option>
+                    <option value="CAD">CAD - Canadian Dollar</option>
+                    <option value="CHF">CHF - Swiss Franc</option>
+                    <option value="CNY">CNY - Chinese Yuan</option>
+                    <option value="SGD">SGD - Singapore Dollar</option>
+                    <option value="AED">AED - UAE Dirham</option>
+                    <option value="SAR">SAR - Saudi Riyal</option>
+                    <option value="KRW">KRW - South Korean Won</option>
+                    <option value="HKD">HKD - Hong Kong Dollar</option>
+                    <option value="NZD">NZD - New Zealand Dollar</option>
+                    <option value="SEK">SEK - Swedish Krona</option>
+                    <option value="NOK">NOK - Norwegian Krone</option>
+                    <option value="DKK">DKK - Danish Krone</option>
+                    <option value="ZAR">ZAR - South African Rand</option>
+                    <option value="BRL">BRL - Brazilian Real</option>
+                    <option value="RUB">RUB - Russian Ruble</option>
+                    <option value="MXN">MXN - Mexican Peso</option>
+                    <option value="THB">THB - Thai Baht</option>
+                    <option value="MYR">MYR - Malaysian Ringgit</option>
+                    <option value="PKR">PKR - Pakistani Rupee</option>
+                </select>
+                <input type="number" id="amount" value="1000.00">
+            </div>
+                    </div>
+                    <img src="const.jfif" alt="Currency Conversion"width="40" height="40">
+                    <div class="down sec">
+                        <p>Converted Amount</p>
+                         <div class="sector">
+
+                             <select id="to"class="country">
+                                 <option value="USD" selected>USD - US Dollar</option>
+                                 <option value="INR" >INR - Indian Rupee</option>
+                    <option value="EUR">EUR - Euro</option>
+                    <option value="GBP">GBP - British Pound</option>
+                    <option value="JPY">JPY - Japanese Yen</option>
+                    <option value="AUD">AUD - Australian Dollar</option>
+                    <option value="CAD">CAD - Canadian Dollar</option>
+                    <option value="CHF">CHF - Swiss Franc</option>
+                    <option value="CNY">CNY - Chinese Yuan</option>
+                    <option value="SGD">SGD - Singapore Dollar</option>
+                    <option value="AED">AED - UAE Dirham</option>
+                    <option value="SAR">SAR - Saudi Riyal</option>
+                    <option value="KRW">KRW - South Korean Won</option>
+                    <option value="HKD">HKD - Hong Kong Dollar</option>
+                    <option value="NZD">NZD - New Zealand Dollar</option>
+                    <option value="SEK">SEK - Swedish Krona</option>
+                    <option value="NOK">NOK - Norwegian Krone</option>
+                    <option value="DKK">DKK - Danish Krone</option>
+                    <option value="ZAR">ZAR - South African Rand</option>
+                    <option value="BRL">BRL - Brazilian Real</option>
+                    <option value="RUB">RUB - Russian Ruble</option>
+                    <option value="MXN">MXN - Mexican Peso</option>
+                    <option value="THB">THB - Thai Baht</option>
+                    <option value="MYR">MYR - Malaysian Ringgit</option>
+                    <option value="PKR">PKR - Pakistani Rupee</option>
+                </select>
+                <input type="number" id="converted-amount" value="0.00" readonly>
+            </div>
+
+                    </div>
+                </div>
+                <footer>
+                    <p class="rate">1 INR=0.01 USD</p>
+                    <p>© 2026CurrencyMate. All rights reserved.</p>
+                </footer>
+            </main>
+        </div>
+    </section>
 </body>
 <script src="script.js"></script>
 </html>
