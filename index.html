@@ -30,7 +30,7 @@
                         <p>Amount</p>
                         <div class="sector">
 
-                            <select id="from"class="country"onchange="convertCurrency()">
+                            <select id="from"class="country "onchange="convertCurrency()">
                                 <option value="USD">USD - US Dollar</option>
                     <option value="INR" selected>INR - Indian Rupee</option>
                     <option value="EUR">EUR - Euro</option>
@@ -57,7 +57,7 @@
                     <option value="MYR">MYR - Malaysian Ringgit</option>
                     <option value="PKR">PKR - Pakistani Rupee</option>
                 </select>
-                <input type="number" id="amount"class="amount" placeholder="Enter amount" value="1" onchange="convertCurrency()">
+                <input type="number" id="baseamount"class="amount" placeholder="Enter amount" value="1" oninput="convertCurrency()">
             </div>
                     </div>
                     <img src="const.jfif" class="swap"alt="Currency Conversion"width="40" height="40">

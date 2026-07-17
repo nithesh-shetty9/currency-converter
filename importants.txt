@@ -1,0 +1,23 @@
+fetch(`https://api.currencyapi.com/v3/latest?apikey=${API_KEY}&base_currency=USD&currencies=EUR`)
+  .then((res) => res.json())
+  .then((data) => {
+    console.log(data.data.EUR.value);
+  });
+  fetch(url) – Sends an HTTP request to the API and returns a Promise.
+Backticks ` ` – Create a template literal, allowing variables to be inserted into a string.
+${variable} – Inserts the value of a variable inside a template literal.
+.then() – Executes code after the previous asynchronous operation completes successfully.
+(res) => res.json() – An arrow function that converts the API response into a JavaScript object (JSON).
+tSecond .then((data) => { ... }) – Runs after the JSON is ready and gives access to the parsed data
+response
+{
+  "meta": {
+    "last_updated_at": "2026-07-17T00:00:00Z"
+  },
+  "data": {
+    "EUR": {
+      "code": "EUR",
+      "value": 0.86
+    }
+  }
+}
